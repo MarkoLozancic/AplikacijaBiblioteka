@@ -8,23 +8,25 @@ namespace LinqXMLDokumenti
 {
     internal class Knjiga
     {
-        const int knjiga_id;
-        string autor, izdavač;
-        int godRod;
+        int knjiga_id;
+        string autor, izdavac, naslov;
 
-        public Korisnik(string ime, string prezime, int godRod)
+        public Knjiga(int knjiga_id, string autor, string izdavac, string naslov)
         {
-            this.Ime = ime;
-            this.Prezime = prezime;
-            this.GodRod = godRod;
+            this.knjiga_id = knjiga_id;
+            this.autor = autor;
+            this.izdavac = izdavac;
+            this.naslov = naslov;
         }
 
-        public string Ime { get => ime; set => ime = value; }
-        public string Prezime { get => prezime; set => prezime = value; }
-        public int GodRod { get => godRod; set => godRod = value; }
+        public int Knjiga_id { get => knjiga_id; set => knjiga_id = value; }
+        public string Autor { get => autor; set => autor = value; }
+        public string Izdavac { get => izdavac; set => izdavac = value; }
+        public string Naslov { get => naslov; set => naslov = value; }
+
         public override string ToString()
         {
-            return "Ime: " + ime + " Prezime: " + prezime + "\r\nGodina rodenja: " + godRod;
+            return "Knjiga ID: " + Knjiga_id + " Autor: " + Autor + ", Izdavac" + Izdavac + ",  Naslov: " + Naslov;
         }
     }
 }

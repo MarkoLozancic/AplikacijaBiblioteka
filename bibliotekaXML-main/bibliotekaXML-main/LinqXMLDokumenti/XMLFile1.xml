@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<entiteti xmlns:xsi="a" xsi:noNamespaceSchemaLocation="SchemaKorisnik.xsd">
+  <korisnici>
+    <Korisnik>
+      <Korisnik_ID>1234</Korisnik_ID>
+      <Email>afsd</Email>
+      <Ime>marko</Ime>
+      <Prezime>assfd</Prezime>
+      <Adresa>dafs</Adresa>
+      <Broj_Telefona>3241</Broj_Telefona>
+    </Korisnik>
+    <Korisnik>
+      <Korisnik_ID>312464</Korisnik_ID>
+      <Email>hgfsdaSD</Email>
+      <Ime>ante</Ime>
+      <Prezime>afsdh</Prezime>
+      <Adresa>sfgdsdgf</Adresa>
+      <Broj_Telefona>342132</Broj_Telefona>
+    </Korisnik>
+    <Korisnik>
+      <Korisnik_ID>7896</Korisnik_ID>
+      <Email>sgdf</Email>
+      <Ime>marko</Ime>
+      <Prezime>fasd</Prezime>
+      <Adresa>hgdf</Adresa>
+      <Broj_Telefona>5324</Broj_Telefona>
+    </Korisnik>
+  </korisnici>
+  <evidencije></evidencije>
+  <knjige>
+    <Knjiga>
+      <Knjiga_ID>1234</Knjiga_ID>
+      <Autor>adfs</Autor>
+      <Izdavac>asdf</Izdavac>
+      <Naslov>asdf</Naslov>
+    </Knjiga>
+    <Knjiga>
+      <Knjiga_ID>31243124</Knjiga_ID>
+      <Autor>idemoo</Autor>
+      <Izdavac>jakoo</Izdavac>
+      <Naslov>asdf</Naslov>
+    </Knjiga>
+  </knjige>
+  <stanje></stanje>
+</entiteti>

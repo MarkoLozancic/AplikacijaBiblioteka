@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LinqXMLDokumenti
 {
-    public partial class PregledPosudbi : Form
+    public partial class Posudba_Vracanje : Form
     {
-        public PregledPosudbi()
+        public Posudba_Vracanje()
         {
             InitializeComponent();
         }

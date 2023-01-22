@@ -30,13 +30,13 @@
         {
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtIme = new System.Windows.Forms.TextBox();
+            this.txtNaslov = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtAutor = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtIzdavac = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtKnjigaID = new System.Windows.Forms.TextBox();
             this.btnUnesi = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -45,105 +45,117 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 27F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label4.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label4.Location = new System.Drawing.Point(22, 26);
+            this.label4.Location = new System.Drawing.Point(120, 39);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(318, 40);
+            this.label4.Size = new System.Drawing.Size(471, 63);
             this.label4.TabIndex = 18;
             this.label4.Text = "Unesi novu knjigu";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 91);
+            this.label1.Location = new System.Drawing.Point(39, 140);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.Size = new System.Drawing.Size(56, 20);
             this.label1.TabIndex = 19;
-            this.label1.Text = "Naziv";
+            this.label1.Text = "Naslov";
             // 
-            // txtIme
+            // txtNaslov
             // 
-            this.txtIme.Location = new System.Drawing.Point(29, 129);
-            this.txtIme.Multiline = true;
-            this.txtIme.Name = "txtIme";
-            this.txtIme.Size = new System.Drawing.Size(191, 20);
-            this.txtIme.TabIndex = 20;
+            this.txtNaslov.Location = new System.Drawing.Point(44, 185);
+            this.txtNaslov.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNaslov.Multiline = true;
+            this.txtNaslov.Name = "txtNaslov";
+            this.txtNaslov.Size = new System.Drawing.Size(284, 29);
+            this.txtNaslov.TabIndex = 20;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 175);
+            this.label2.Location = new System.Drawing.Point(40, 250);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(32, 13);
+            this.label2.Size = new System.Drawing.Size(48, 20);
             this.label2.TabIndex = 21;
             this.label2.Text = "Autor";
             // 
-            // textBox1
+            // txtAutor
             // 
-            this.textBox1.Location = new System.Drawing.Point(29, 209);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 20);
-            this.textBox1.TabIndex = 22;
+            this.txtAutor.Location = new System.Drawing.Point(43, 296);
+            this.txtAutor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtAutor.Multiline = true;
+            this.txtAutor.Name = "txtAutor";
+            this.txtAutor.Size = new System.Drawing.Size(284, 29);
+            this.txtAutor.TabIndex = 22;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(28, 261);
+            this.label3.Location = new System.Drawing.Point(43, 352);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 13);
+            this.label3.Size = new System.Drawing.Size(64, 20);
             this.label3.TabIndex = 23;
             this.label3.Text = "Izdavac";
             // 
-            // textBox2
+            // txtIzdavac
             // 
-            this.textBox2.Location = new System.Drawing.Point(29, 293);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(191, 20);
-            this.textBox2.TabIndex = 24;
+            this.txtIzdavac.Location = new System.Drawing.Point(43, 394);
+            this.txtIzdavac.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtIzdavac.Multiline = true;
+            this.txtIzdavac.Name = "txtIzdavac";
+            this.txtIzdavac.Size = new System.Drawing.Size(284, 29);
+            this.txtIzdavac.TabIndex = 24;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(28, 346);
+            this.label6.Location = new System.Drawing.Point(38, 454);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 18);
+            this.label6.Size = new System.Drawing.Size(110, 26);
             this.label6.TabIndex = 25;
             this.label6.Text = "Knjiga ID";
             // 
-            // textBox3
+            // txtKnjigaID
             // 
-            this.textBox3.Location = new System.Drawing.Point(29, 398);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(191, 20);
-            this.textBox3.TabIndex = 26;
+            this.txtKnjigaID.Location = new System.Drawing.Point(43, 502);
+            this.txtKnjigaID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtKnjigaID.Multiline = true;
+            this.txtKnjigaID.Name = "txtKnjigaID";
+            this.txtKnjigaID.Size = new System.Drawing.Size(284, 29);
+            this.txtKnjigaID.TabIndex = 26;
             // 
             // btnUnesi
             // 
-            this.btnUnesi.Location = new System.Drawing.Point(310, 398);
+            this.btnUnesi.Location = new System.Drawing.Point(478, 469);
+            this.btnUnesi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnUnesi.Name = "btnUnesi";
-            this.btnUnesi.Size = new System.Drawing.Size(109, 40);
+            this.btnUnesi.Size = new System.Drawing.Size(164, 62);
             this.btnUnesi.TabIndex = 27;
             this.btnUnesi.Text = "Unesi Knjigu";
             this.btnUnesi.UseVisualStyleBackColor = true;
+            this.btnUnesi.Click += new System.EventHandler(this.btnUnesi_Click);
             // 
             // UnosKnjige
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(466, 493);
+            this.ClientSize = new System.Drawing.Size(699, 577);
             this.Controls.Add(this.btnUnesi);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtKnjigaID);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtIzdavac);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtAutor);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtIme);
+            this.Controls.Add(this.txtNaslov);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UnosKnjige";
             this.Text = "UnosKnjige";
             this.ResumeLayout(false);
@@ -155,13 +167,13 @@
 
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtIme;
+        private System.Windows.Forms.TextBox txtNaslov;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtAutor;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtIzdavac;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtKnjigaID;
         private System.Windows.Forms.Button btnUnesi;
     }
 }

@@ -15,7 +15,7 @@ namespace LinqXMLDokumenti
     public partial class FrmUnosKorisnika : Form
     {
       //  List<Osoba> osobe = new List<Osoba>();
-        string dokument = "osobe.xml";
+        
         public FrmUnosKorisnika()
         {
             InitializeComponent();
@@ -25,65 +25,52 @@ namespace LinqXMLDokumenti
         {
 
         }
-        
+
         private void btnUnesi_Click(object sender, EventArgs e)
         {
-            Osoba os = new Osoba(txtIme.Text, txtPrezime.Text, Convert.ToInt32(txtGodRod.Text));
+            List<Korisnik> Korisnici = new List<Korisnik>();
+            Korisnik os = new Korisnik(Convert.ToInt32(txtKorisnikID.Text), txtEmail.Text, txtIme.Text, txtPrezime.Text, txtAdresa.Text, Convert.ToInt32(txtBrojTelf.Text));
 
-            DialogResult upit = MessageBox.Show("Zelite li upisati jos osoba?", "Upit", MessageBoxButtons.YesNo);
-            if (upit == DialogResult.Yes)
-            {
+          
+                Korisnici.Add(os);
+                var users = XDocument.Load(@"C:\Users\marko\source\repos\MarkoLozancic\AplikacijaBiblioteka\bibliotekaXML-main\bibliotekaXML-main\LinqXMLDokumenti\XMLFile1.xml");
 
-                osobe.Add(os);
-                txtGodRod.Clear();
-                txtIme.Clear();
-                txtPrezime.Clear();
-            }
-            else
-            {
-                if (File.Exists(dokument))
+                foreach (Korisnik korisnik in Korisnici)
                 {
-                    var OsobeXML = XDocument.Load(dokument);
-                 
+                    var Osoba = new XElement("Korisnik",
+                         new XElement("Korisnik_ID", os.Korisnik_id),
+                          new XElement("Email", os.Email),
+                        new XElement("Ime", os.Ime),
+                          new XElement("Prezime", os.Prezime),
+                           new XElement("Adresa", os.Adresa),
+                            new XElement("Broj_Telefona", os.BrojTelefona));
 
+                    users.Root.Element("korisnici").Add(Osoba);
+                    users.Save(@"C:\Users\marko\source\repos\MarkoLozancic\AplikacijaBiblioteka\bibliotekaXML-main\bibliotekaXML-main\LinqXMLDokumenti\XMLFile1.xml");
                     
-                    foreach (Osoba osoba in osobe)
-                    {
-                        var Osoba = new XElement("Osoba",
-                            new XElement("Ime", os.Ime),
-                              new XElement("Prezime", os.Prezime),
-                              new XElement("Godina_rodenja", os.GodRod));
-                        OsobeXML.Root.Add(Osoba);
-
-                    }
-                    OsobeXML.Save(dokument);
-
                 }
+                Korisnici.Clear();
+          
+            txtAdresa.Clear();
+            txtIme.Clear();
+            txtPrezime.Clear();
+            txtBrojTelf.Clear();
+            txtEmail.Clear();
+            txtKorisnikID.Clear();
 
-                else
-                {
-                    var OsobeXML = new XDocument();
+        } 
 
-
-
-                    foreach (Osoba osoba in osobe)
-                    {
-                        var Osoba = new XElement("Osoba",
-                            new XElement("Ime", os.Ime),
-                              new XElement("Prezime", os.Prezime),
-                              new XElement("Godina_rodenja", os.GodRod));
-                        OsobeXML.Root.Add(Osoba);
-
-                    }
-                    OsobeXML.Save(dokument);
-                }
-                this.Close();
+                
+                    
+                
+                
                
                
               
                  
-            }
-        }
+            
+          
+        
 
         private void txtIme_TextChanged(object sender, EventArgs e)
         {

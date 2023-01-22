@@ -32,7 +32,8 @@ namespace LinqXMLDokumenti
 
         public override string ToString()
         {
-            return "Ime: " + " Prezime: " + Prezime + "\r\nGodina rodenja: " + godRod;
+            return "Ime: " +Ime+ " Prezime: " + Prezime + "\r\nAdresa: " + Adresa +
+                ", Broj telefona:" + BrojTelefona + "Korisnik ID: "+ Korisnik_id + ", Email: "+ Email; 
         }
     }
 }
