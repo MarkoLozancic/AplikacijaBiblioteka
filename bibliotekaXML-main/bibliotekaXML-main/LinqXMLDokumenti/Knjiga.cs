@@ -28,5 +28,7 @@ namespace LinqXMLDokumenti
         {
             return "Knjiga ID: " + Knjiga_id + " Autor: " + Autor + ", Izdavac" + Izdavac + ",  Naslov: " + Naslov;
         }
+
+      
     }
 }

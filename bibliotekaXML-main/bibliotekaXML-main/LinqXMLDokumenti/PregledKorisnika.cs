@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Xml.Linq;
 
 namespace LinqXMLDokumenti
-{
+{ 
     public partial class PregledKorisnika : Form
     {
         public PregledKorisnika()
@@ -20,8 +20,8 @@ namespace LinqXMLDokumenti
 
         private void btnPregledKorisnika_Click(object sender, EventArgs e)
         {
-            rtbPregled.Clear();
-            var pregledkorisnika = XDocument.Load(@"C:\Users\marko\source\repos\MarkoLozancic\AplikacijaBiblioteka\bibliotekaXML-main\bibliotekaXML-main\LinqXMLDokumenti\XMLFile1.xml");
+           /* rtbPregled.Clear();
+            var pregledkorisnika = XDocument.Load("Korisnik.xml");
 
             var query =
                 from Korisnik
@@ -35,7 +35,13 @@ namespace LinqXMLDokumenti
                   || (Korisnik.Element("Broj_Telefona").Value == txtBrojTelf.Text && chbBrojTelf.Checked)
                 select Korisnik;
             query.ToList().ForEach(s => rtbPregled.AppendText("\n\n" + Convert.ToString(s)));
+            if(string.IsNullOrEmpty(rtbPregled.Text))
+            {
+                rtbPregled.Text = "Nismo uspjeli pronaci tu osobu, molim provjerite tocnost unesenih podataka!";
 
+
+            }
+           */
 
         }
     }

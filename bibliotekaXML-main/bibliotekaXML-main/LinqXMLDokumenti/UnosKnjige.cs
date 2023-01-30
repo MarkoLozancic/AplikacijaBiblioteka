@@ -25,7 +25,7 @@ namespace LinqXMLDokumenti
 
 
             Knjige.Add(book);
-            var libero = XDocument.Load(@"C:\Users\marko\source\repos\MarkoLozancic\AplikacijaBiblioteka\bibliotekaXML-main\bibliotekaXML-main\LinqXMLDokumenti\XMLFile1.xml");
+            var libero = XDocument.Load("Knjiga.xml");
 
             foreach (Knjiga k in Knjige)
             {
@@ -37,11 +37,11 @@ namespace LinqXMLDokumenti
                        
                       
 
-                libero.Root.Element("knjige").Add(knjiga);
+                libero.Element("knjige").Add(knjiga);
                 
 
             }
-            libero.Save(@"C:\Users\marko\source\repos\MarkoLozancic\AplikacijaBiblioteka\bibliotekaXML-main\bibliotekaXML-main\LinqXMLDokumenti\XMLFile1.xml");
+            libero.Save("Knjiga.xml");
 
             Knjige.Clear();
 

@@ -23,7 +23,7 @@ namespace LinqXMLDokumenti
         private void btnPregledKnjiga_Click(object sender, EventArgs e)
         {
             rtbPregled.Clear();
-            var pregledknjiga = XDocument.Load(@"C:\Users\marko\source\repos\MarkoLozancic\AplikacijaBiblioteka\bibliotekaXML-main\bibliotekaXML-main\LinqXMLDokumenti\XMLFile1.xml");
+            var pregledknjiga = XDocument.Load("Knjiga.xml");
 
             var query =
                 from Knjiga

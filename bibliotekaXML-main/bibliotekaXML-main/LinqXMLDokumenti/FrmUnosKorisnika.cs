@@ -33,7 +33,8 @@ namespace LinqXMLDokumenti
 
           
                 Korisnici.Add(os);
-                var users = XDocument.Load(@"C:\Users\marko\source\repos\MarkoLozancic\AplikacijaBiblioteka\bibliotekaXML-main\bibliotekaXML-main\LinqXMLDokumenti\XMLFile1.xml");
+          
+            var users = XDocument.Load("Korisnik.xml");
 
                 foreach (Korisnik korisnik in Korisnici)
                 {
@@ -45,8 +46,8 @@ namespace LinqXMLDokumenti
                            new XElement("Adresa", os.Adresa),
                             new XElement("Broj_Telefona", os.BrojTelefona));
 
-                    users.Root.Element("korisnici").Add(Osoba);
-                    users.Save(@"C:\Users\marko\source\repos\MarkoLozancic\AplikacijaBiblioteka\bibliotekaXML-main\bibliotekaXML-main\LinqXMLDokumenti\XMLFile1.xml");
+                    users.Element("korisnici").Add(Osoba);
+                    users.Save("Korisnik.xml");
                     
                 }
                 Korisnici.Clear();
