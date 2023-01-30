@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<korisnici xmlns:xsi="a" xsi:noNamespaceSchemaLocation="SchemaKorisnik.xsd">
+  <Korisnik>
+    <Korisnik_ID>1234</Korisnik_ID>
+    <Email>afsd</Email>
+    <Ime>marko</Ime>
+    <Prezime>assfd</Prezime>
+    <Adresa>dafs</Adresa>
+    <Broj_Telefona>3241</Broj_Telefona>
+  </Korisnik>
+  <Korisnik>
+    <Korisnik_ID>312464</Korisnik_ID>
+    <Email>hgfsdaSD</Email>
+    <Ime>ante</Ime>
+    <Prezime>afsdh</Prezime>
+    <Adresa>sfgdsdgf</Adresa>
+    <Broj_Telefona>342132</Broj_Telefona>
+  </Korisnik>
+  <Korisnik>
+    <Korisnik_ID>7896</Korisnik_ID>
+    <Email>sgdf</Email>
+    <Ime>marko</Ime>
+    <Prezime>fasd</Prezime>
+    <Adresa>hgdf</Adresa>
+    <Broj_Telefona>5324</Broj_Telefona>
+  </Korisnik>
+  <Korisnik>
+    <Korisnik_ID>2445</Korisnik_ID>
+    <Email>gfsdfdfgsd</Email>
+    <Ime>marko</Ime>
+    <Prezime>fasdasdf</Prezime>
+    <Adresa>hgdhh</Adresa>
+    <Broj_Telefona>4556</Broj_Telefona>
+  </Korisnik>
+  <Korisnik>
+    <Korisnik_ID>456</Korisnik_ID>
+    <Email>gs</Email>
+    <Ime>ivan</Ime>
+    <Prezime>afsd</Prezime>
+    <Adresa>adf</Adresa>
+    <Broj_Telefona>324</Broj_Telefona>
+  </Korisnik>
+</korisnici>
