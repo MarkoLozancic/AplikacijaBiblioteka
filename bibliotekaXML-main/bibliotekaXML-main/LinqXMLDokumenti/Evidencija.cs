@@ -8,7 +8,7 @@ namespace LinqXMLDokumenti
 {
     class Evidencija
     {
-       int Korisnik_ID;
+     //  int Korisnik_ID;
         
        /**/
         

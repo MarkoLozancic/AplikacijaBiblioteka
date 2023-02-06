@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\bibliotekaXML-main",
+    "\\bibliotekaXML-main\\bibliotekaXML-main",
+    "\\bibliotekaXML-main\\bibliotekaXML-main\\LinqXMLDokumenti"
   ],
-  "SelectedNode": "\\LinqXMLDokumenti.sln",
+  "SelectedNode": "\\bibliotekaXML-main\\bibliotekaXML-main\\LinqXMLDokumenti\\PregledPosudbi.cs",
   "PreviewInSolutionExplorer": false
 }
